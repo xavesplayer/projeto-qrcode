@@ -67,7 +67,7 @@ projeto-qrcode/
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/projeto-qrcode.git
+git clone https://github.com/xavesplayer/projeto-qrcode.git
 ```
 
 Acesse a pasta do projeto:
