@@ -1,6 +1,6 @@
 # 🚀 QR Code & Password Generator
 
-![Node.js](https://img.shields.io/badge/Node.js-22.x-green)
+![Node.js](https://img.shields.io/badge/Node.js-24.12.0-green)
 ![Status](https://img.shields.io/badge/Status-Concluído-success)
 ![DIO](https://img.shields.io/badge/DIO-Desafio%20de%20Projeto-blue)
 
