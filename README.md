@@ -1,19 +1,25 @@
 # 🚀 QR Code & Password Generator
 
-Kit de utilidades desenvolvido em **Node.js** para geração de **QR Codes** e **senhas personalizadas** através do terminal.
+![Node.js](https://img.shields.io/badge/Node.js-22.x-green)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
+![DIO](https://img.shields.io/badge/DIO-Desafio%20de%20Projeto-blue)
 
-Este projeto foi desenvolvido durante um desafio prático da **DIO (Digital Innovation One)** com o objetivo de aplicar conceitos de modularização, organização de código, gerenciamento de dependências e utilização de bibliotecas externas.
+Kit de utilidades desenvolvido em **Node.js** para geração de **QR Codes** e **senhas aleatórias** através do terminal.
+
+O projeto foi desenvolvido como desafio prático da **Digital Innovation One (DIO)** com foco em modularização, gerenciamento de dependências e organização de aplicações Node.js.
 
 ---
 
 ## 📖 Sobre o Projeto
 
-A aplicação oferece uma interface interativa no terminal onde é possível selecionar diferentes ferramentas, como:
+A aplicação oferece um menu interativo no terminal que permite ao usuário escolher entre diferentes ferramentas utilitárias.
 
-* Geração de QR Codes;
-* Geração de senhas personalizadas.
+Atualmente estão disponíveis:
 
-A arquitetura foi organizada em módulos independentes, facilitando a manutenção do código e permitindo a adição de novas funcionalidades no futuro.
+* Geração de QR Codes a partir de textos ou URLs;
+* Geração de senhas aleatórias personalizadas.
+
+A estrutura foi organizada para facilitar a manutenção e permitir a adição de novas funcionalidades futuramente.
 
 ---
 
@@ -23,8 +29,19 @@ A arquitetura foi organizada em módulos independentes, facilitando a manutenç�
 * JavaScript
 * NPM
 * Dotenv
-* QRCode
 * Prompt
+* QRCode
+
+---
+
+## 🏗️ Arquitetura
+
+O projeto foi dividido por responsabilidades para manter o código organizado e de fácil manutenção.
+
+* **prompts-schema**: definição dos fluxos de interação com o usuário;
+* **services**: implementação das regras de negócio;
+* **utils**: recursos auxiliares reutilizáveis;
+* **index.js**: ponto de entrada da aplicação.
 
 ---
 
@@ -38,20 +55,9 @@ projeto-qrcode/
 │
 ├── src/
 │   ├── prompts-schema/
-│   │   ├── prompt-schema-main.js
-│   │   └── prompt-schema-qrcode.js
-│   │
 │   ├── services/
 │   │   ├── password/
-│   │   │   ├── utils/
-│   │   │   │   └── permitted-characters.js
-│   │   │   ├── create.js
-│   │   │   └── handle.js
-│   │   │
 │   │   └── qr-code/
-│   │       ├── create.js
-│   │       └── handle.js
-│   │
 │   └── index.js
 │
 ├── .env
@@ -98,49 +104,37 @@ node --env-file=.env src/index.js
 
 ---
 
-## 🎯 Funcionalidades
-
-### QR Code
-
-* Geração de QR Codes a partir de textos ou URLs;
-* Exibição diretamente no terminal;
-* Opção de personalização do formato de saída.
-
-### Password Generator
-
-* Criação de senhas aleatórias;
-* Utilização de conjuntos de caracteres configuráveis;
-* Estrutura preparada para futuras melhorias.
-
----
-
 ## 📸 Demonstração
 
 ### Gerando um QR Code pelo terminal
 
-O usuário seleciona a ferramenta desejada, informa o conteúdo que será convertido e escolhe o formato de saída.
+O usuário seleciona a funcionalidade desejada, informa o conteúdo que será convertido e escolhe o formato de saída.
 
 ![Demonstração do projeto](./assets/demo-qrcode.png)
 
 ---
 
-## 📚 Conceitos Praticados
+## 🎯 Conceitos Praticados
 
 Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 
 * Modularização de aplicações Node.js;
-* Separação de responsabilidades;
-* Organização de código por camadas;
-* Utilização de dependências externas;
+* Organização de código por responsabilidades;
+* Utilização de bibliotecas externas;
+* Gerenciamento de dependências;
 * Manipulação de entrada de dados via terminal;
 * Configuração de variáveis de ambiente;
 * Estruturação de projetos escaláveis.
 
 ---
 
-## 🎓 Objetivo de Aprendizagem
+## 🔮 Melhorias Futuras
 
-O foco deste projeto foi praticar a construção de aplicações Node.js organizadas em módulos reutilizáveis, compreendendo melhor a integração de bibliotecas externas e a estruturação de sistemas de forma escalável.
+* Exportação do QR Code em formato PNG;
+* Geração de QR Codes personalizados;
+* Histórico de códigos gerados;
+* Novos formatos de saída;
+* Interface web utilizando React.
 
 ---
 
